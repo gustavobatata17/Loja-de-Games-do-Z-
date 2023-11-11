@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <title>Loja de Games do Zé</title>
+</head>
+<body>
+    <header>
+        <h1>Loja de Games do Zé</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Produtos</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="main-content">
+        <h2>Bem-vindo à nossa loja!</h2>
+        <p>Encontre os melhores jogos com preços incríveis.</p>
+    </div>
+
+    <section class="products">
+        <article>
+            <img class="img_lista" src="img/capa.lego_indiana_jones.jpeg" alt="lego_indiana_jones">
+            <h3>Lego Indiana Jones</h3>
+            <p id="descripition_game"> “Lego Indiana Jones: The Original Adventures” 
+                para PlayStation 2 é um jogo de aventura e 
+                quebra-cabeças que recria os três primeiros filmes da saga Indiana
+                 Jones usando a estética e o humor característicos dos blocos Lego. </p>
+                 <h4> 10.99$</h4>
+            <button onclick="addToCart('Lego Indiana Jones', 10.99)">Adicionar ao Carrinho</button>
+        </article>
+
+        <article>
+            <img class="img_lista" src="img/capa_bomba_patch.jpg" alt="Bomba Patch">
+            <h3>Bomba Patch</h3>
+            <p id="descripition_game">Bomba Patch é uma série de modificações da
+                 série de jogos eletrônicos de futebol Pro Evolution Soccer,
+                  criada pelo brasileiro Allan Jefferson. Originou-se em 2007 
+                a partir de um campeonato do sexto título da série,.</p>
+                <h4> 19.99$</h4>
+            <button onclick="addToCart('Bomba Patch ', 19.99)">Adicionar ao Carrinho</button>
+        </article>
+
+        <!-- Adicione mais jogos conforme necessário -->
+    </section>
+
+    <section class="shopping-cart">
+        <h2>Carrinho de Compras</h2>
+        <ul id="cart-items"></ul>
+        <p id="total">Total: R$ 0.00</p>
+    </section>
+ <br>
+
+ <h1></h1>
+    <footer>
+        <p>&copy; 2023 Loja de Games do Zé. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
